@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JobFinder - Job Listings</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html" class="logo"><i class="fa-solid fa-briefcase"></i> JobFinder</a></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Job Search</a>
+        <a href="companies.html">Companies</a>
+        <a href="login.html" class="btn login"><i class="fa-solid fa-user"></i> Login</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h1><i class="fa-solid fa-magnifying-glass"></i> Available Jobs</h1>
+    <form class="filter-bar" id="filterForm">
+      <input type="text" placeholder="Keyword (e.g. Designer, React)" name="query"/>
+      <input type="text" placeholder="Location (e.g. Dhaka)" name="location"/>
+      <select name="type">
+        <option value="">All Types</option>
+        <option value="fulltime">Full-Time</option>
+        <option value="parttime">Part-Time</option>
+        <option value="remote">Remote</option>
+        <option value="intern">Internship</option>
+      </select>
+      <select name="category">
+        <option value="">All Categories</option>
+        <option value="it">IT & Software</option>
+        <option value="accounting">Accounting</option>
+        <option value="education">Education</option>
+        <option value="healthcare">Healthcare</option>
+        <option value="design">Design & Creative</option>
+        <option value="sales">Sales/Marketing</option>
+      </select>
+      <button type="submit"><i class="fa-solid fa-search"></i> Filter</button>
+    </form>
+    <div class="job-listings" id="job-results">
+    </div>
+  </main>
+  <script src="js/jobs.js"></script>
+</body>
+</html>

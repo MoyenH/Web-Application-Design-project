@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JobFinder - Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html" class="logo"><i class="fa-solid fa-briefcase"></i> JobFinder</a></div>
+      <nav class="main-nav">
+        <a href="index.html"><i class="fa-solid fa-home"></i> Home</a>
+        <a href="jobs.html"><i class="fa-solid fa-magnifying-glass"></i> Job Search</a>
+        <a href="companies.html"><i class="fa-solid fa-building"></i> Companies</a>
+        <a href="login.html" class="btn login"><i class="fa-solid fa-user"></i> Login</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-card">
+        <div class="hero-left">
+          <h1>Find the right job for you</h1>
+          <p class="lead">Browse thousands of listings from top companies.<br>Quick search and easy apply.</p>
+          <form action="jobs.html" method="get" class="search-form" id="searchForm" role="search">
+            <div class="inputs">
+              <input type="text" name="query" placeholder="Search jobs e.g., Web Developer" aria-label="Job title or keywords" />
+              <input type="text" name="location" placeholder="Location e.g., Dhaka" aria-label="Location" />
+              <select name="category">
+                <option value="" selected>All Categories</option>
+                <option value="it">IT & Software</option>
+                <option value="accounting">Accounting</option>
+                <option value="education">Education</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="design">Design & Creative</option>
+                <option value="sales">Sales/Marketing</option>
+              </select>
+            </div>
+            <button type="submit" class="search-btn"><i class="fa-solid fa-search"></i> Search Jobs</button>
+          </form>
+          <div class="categories">
+            <h2>Popular Categories</h2>
+            <ul class="category-list">
+              <li><a href="jobs.html?category=it"><i class="fa-solid fa-laptop-code"></i> IT & Software</a></li>
+              <li><a href="jobs.html?category=accounting"><i class="fa-solid fa-calculator"></i> Accounting</a></li>
+              <li><a href="jobs.html?category=education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+              <li><a href="jobs.html?category=healthcare"><i class="fa-solid fa-stethoscope"></i> Healthcare</a></li>
+              <li><a href="jobs.html?category=design"><i class="fa-solid fa-paint-brush"></i> Design</a></li>
+              <li><a href="jobs.html?category=sales"><i class="fa-solid fa-chart-line"></i> Sales/Marketing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="promo">
+            <div class="stat"><strong>12k+</strong><span>Jobs Posted</span></div>
+            <div class="stat"><strong>4.8</strong><span>Avg. Employer Rating</span></div>
+          </div>
+          <div class="promo">
+            <div class="stat"><strong>8k+</strong><span>Active Companies</span></div>
+            <div class="stat"><strong>95%</strong><span>Success Rate</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <small><span id="year"></span> &copy; JobFinder. All rights reserved. | <a href="#">Privacy Policy</a></small>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

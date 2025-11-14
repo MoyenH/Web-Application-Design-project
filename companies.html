@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JobFinder - Companies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html" class="logo"><i class="fa-solid fa-briefcase"></i> JobFinder</a></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Job Search</a>
+        <a href="companies.html" class="active">Companies</a>
+        <a href="login.html" class="btn login"><i class="fa-solid fa-user"></i> Login</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="page-hero">
+    <div class="container">
+      <h1><i class="fa-solid fa-building"></i> Top Hiring Companies</h1>
+      <p>Explore opportunities from leading employers</p>
+    </div>
+  </section>
+
+
+  <section class="filter-section">
+    <div class="container">
+      <div class="search-box">
+        <i class="fa-solid fa-search"></i>
+        <input type="text" id="company-search" placeholder="Search companies by name or industry...">
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="companies-header">
+      <h2>Featured Companies</h2>
+      <p class="companies-count"><span id="company-count">0</span> companies hiring now</p>
+    </div>
+    <div class="companies-grid" id="companies-list">
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 JobFinder. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/companies.js"></script>
+</body>
+</html>
